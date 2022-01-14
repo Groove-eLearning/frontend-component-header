@@ -102,7 +102,7 @@ class MobileHeader extends React.Component {
     return (
       <header
         aria-label={intl.formatMessage(messages['header.label.main.header'])}
-        className={`site-header-mobile d-flex justify-content-between align-items-center ${stickyClassName}`}
+        className={`site-header-mobile d-flex justify-content-between align-items-center shadow ${stickyClassName}`}
       >
         <a className="nav-skip sr-only sr-only-focusable" href="#main">{intl.formatMessage(messages['header.label.skip.nav'])}</a>
         {mainMenu.length > 0 ? (
@@ -120,7 +120,7 @@ class MobileHeader extends React.Component {
               <MenuContent
                 tag="nav"
                 aria-label={intl.formatMessage(messages['header.label.main.nav'])}
-                className="nav flex-column pin-left pin-right border-top shadow-lg py-2"
+                className="nav flex-column pin-left pin-right border-top shadow py-2"
               >
                 {this.renderMainMenu()}
               </MenuContent>
@@ -141,7 +141,7 @@ class MobileHeader extends React.Component {
               >
                 <Avatar size="1.5rem" src={avatar} alt={username} />
               </MenuTrigger>
-              <MenuContent tag="ul" className="nav flex-column pin-left pin-right border-top shadow-lg py-2">
+              <MenuContent tag="ul" className="nav flex-column pin-left pin-right border-top shadow py-2">
                 {loggedIn ? this.renderUserMenuItems() : this.renderLoggedOutItems()}
               </MenuContent>
             </Menu>
