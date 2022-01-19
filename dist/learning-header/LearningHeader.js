@@ -53,7 +53,7 @@ function LearningHeader(_ref2) {
     alt: getConfig().SITE_NAME
   });
   return /*#__PURE__*/React.createElement("header", {
-    className: "learning-header"
+    className: "learning-header border-bottom"
   }, /*#__PURE__*/React.createElement("a", {
     className: "sr-only sr-only-focusable",
     href: "#main-content"

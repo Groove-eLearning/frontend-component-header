@@ -142,7 +142,7 @@ var MobileHeader = /*#__PURE__*/function (_React$Component) {
       var logoClasses = getConfig().AUTHN_MINIMAL_HEADER ? 'justify-content-left pl-3' : 'justify-content-center';
       return /*#__PURE__*/React.createElement("header", {
         "aria-label": intl.formatMessage(messages['header.label.main.header']),
-        className: "site-header-mobile d-flex justify-content-between align-items-center ".concat(stickyClassName)
+        className: "site-header-mobile border-bottom d-flex justify-content-between align-items-center ".concat(stickyClassName)
       }, /*#__PURE__*/React.createElement("a", {
         className: "nav-skip sr-only sr-only-focusable",
         href: "#main"
