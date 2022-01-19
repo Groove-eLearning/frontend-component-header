@@ -155,7 +155,7 @@ var DesktopHeader = /*#__PURE__*/function (_React$Component) {
       };
       var logoClasses = getConfig().AUTHN_MINIMAL_HEADER ? 'mw-100' : null;
       return /*#__PURE__*/React.createElement("header", {
-        className: "site-header-desktop"
+        className: "site-header-desktop border-bottom"
       }, /*#__PURE__*/React.createElement("a", {
         className: "nav-skip sr-only sr-only-focusable",
         href: "#main"
