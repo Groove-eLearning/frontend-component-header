@@ -65,7 +65,7 @@ var DesktopHeader = /*#__PURE__*/function (_React$Component) {
         if (type === 'item') {
           return /*#__PURE__*/React.createElement("a", {
             key: "".concat(type, "-").concat(content),
-            className: "nav-link",
+            className: "nav-link d-flex align-items-center",
             href: href
           }, content);
         }
@@ -162,7 +162,7 @@ var DesktopHeader = /*#__PURE__*/function (_React$Component) {
       }, intl.formatMessage(messages['header.label.skip.nav'])), /*#__PURE__*/React.createElement("div", {
         className: "container-fluid ".concat(logoClasses)
       }, /*#__PURE__*/React.createElement("div", {
-        className: "nav-container position-relative d-flex align-items-center"
+        className: "nav-container position-relative d-flex"
       }, logoDestination === null ? /*#__PURE__*/React.createElement(Logo, {
         className: "logo",
         src: logo,
