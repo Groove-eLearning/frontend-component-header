@@ -37,7 +37,7 @@ class DesktopHeader extends React.Component {
 
       if (type === 'item') {
         return (
-          <a key={`${type}-${content}`} className="nav-link" href={href}>{content}</a>
+          <a key={`${type}-${content}`} className="nav-link d-flex align-items-center" href={href}>{content}</a>
         );
       }
 
@@ -110,7 +110,7 @@ class DesktopHeader extends React.Component {
       <header className="site-header-desktop border-bottom">
         <a className="nav-skip sr-only sr-only-focusable" href="#main">{intl.formatMessage(messages['header.label.skip.nav'])}</a>
         <div className={`container-fluid ${logoClasses}`}>
-          <div className="nav-container position-relative d-flex align-items-center">
+          <div className="nav-container position-relative d-flex">
             {logoDestination === null ? <Logo className="logo" src={logo} alt={logoAltText} /> : <LinkedLogo className="logo" {...logoProps} />}
             <nav
               aria-label={intl.formatMessage(messages['header.label.main.nav'])}
